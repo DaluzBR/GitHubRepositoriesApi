@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".ui.RepoFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imv_repo_owner"
+        android:layout_width="96dp"
+        android:layout_marginTop="4dp"
+        android:layout_height="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/txv_repo_login"
+        style="@style/Widget.GitHubRepositories.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_repo_owner"
+        tools:text="@string/label_reposítory_login" />
+
+    <TextView
+        android:id="@+id/txv_repo_name_title"
+        style="@style/Widget.GitHubRepositories.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_reposítory_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_login" />
+
+    <TextView
+        android:id="@+id/txv_repo_name_info"
+        style="@style/Widget.GitHubRepositories.TextView.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_name_title"
+        tools:text="@string/label_reposítory_name" />
+
+    <TextView
+        android:id="@+id/txv_repo_description_title"
+        style="@style/Widget.GitHubRepositories.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_reposítory_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_name_info" />
+
+    <TextView
+        android:id="@+id/txv_repo_description_info"
+        style="@style/Widget.GitHubRepositories.TextView.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_description_title"
+        tools:text="@string/label_reposítory_description" />
+
+    <TextView
+        android:id="@+id/txv_repo_language_title"
+        style="@style/Widget.GitHubRepositories.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_reposítory_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_description_info" />
+
+    <TextView
+        android:id="@+id/txv_repo_language_info"
+        style="@style/Widget.GitHubRepositories.TextView.Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_language_title"
+        tools:text="@string/label_reposítory_language" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chp_repo_stargazers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        app:chipBackgroundColor="@color/white"
+        app:chipIcon="@drawable/ic_stars"
+        app:chipIconTint="@color/yellow"
+        app:layout_constraintEnd_toStartOf="@id/chp_repo_watchers_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_language_info"
+        tools:text="Estrelas 0" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chp_repo_watchers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        app:chipBackgroundColor="@color/white"
+        app:chipIcon="@drawable/ic_watchers"
+        app:chipIconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chp_repo_stargazers_count"
+        app:layout_constraintTop_toBottomOf="@id/txv_repo_language_info"
+        tools:text="Observadores 0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_repo_url"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/gray_dark"
+        android:text="@string/label_reposítory_button_link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

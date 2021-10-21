@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GitHub Repo</string>
+    <string name="label_search">Pesquisar</string>
+    <string name="label_search_hint">Usuário</string>
+    <string name="label_reposítory">Repositório</string>
+    <string name="label_reposítory_login">Login</string>
+    <string name="label_reposítory_name">Nome do Repositório</string>
+    <string name="label_reposítory_description">Descrição</string>
+    <string name="label_reposítory_language">Linguagem</string>
+    <string name="label_reposítory_button_link">Ver no GitHub</string>
+    <string name="message_search_item_not_found">Item não encontrado.</string>
+    <string name="message_search_error_user_not_found">Não foi possivel encontrar:\n%1$s</string>
+
+    <string name="message_search_repo_list_size">%1$s</string>
+
+    <plurals name="message_repo_list_size">
+        <item quantity="one">%d repositório encontrado.</item>
+        <item quantity="other">%d repositórios encontrados.</item>
+    </plurals>
+</resources>

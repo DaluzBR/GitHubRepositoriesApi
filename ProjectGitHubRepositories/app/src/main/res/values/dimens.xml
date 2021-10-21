@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_half_padding">6dp</dimen>
+    <dimen name="layout_elevation">5dp</dimen>
+    <dimen name="layout_corner">5dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="layout_extra_padding">32dp</dimen>
+    <dimen name="layout_toolbar_title_size">14dp</dimen>
+</resources>

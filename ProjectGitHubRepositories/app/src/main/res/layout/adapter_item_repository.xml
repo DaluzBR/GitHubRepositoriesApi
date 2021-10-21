@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/layout_corner"
+    app:cardElevation="@dimen/layout_elevation"
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_avatar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txv_repo_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_half_padding"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imv_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nome" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txv_repo_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_half_padding"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/imv_avatar"
+            app:layout_constraintStart_toStartOf="@id/txv_repo_name"
+            app:layout_constraintTop_toBottomOf="@id/txv_repo_name"
+            tools:text="Dexcrição" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chp_repo_stargazers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:chipBackgroundColor="@color/white"
+            app:chipIcon="@drawable/ic_stars"
+            app:chipIconTint="@color/yellow"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/imv_avatar"
+            tools:text="Estrelas" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txv_repo_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/pupple"
+            app:layout_constraintEnd_toEndOf="@id/txv_repo_name"
+            app:layout_constraintTop_toTopOf="@id/chp_repo_stargazers_count"
+            tools:text="Linguagem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
